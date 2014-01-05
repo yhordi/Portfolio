@@ -1,0 +1,187 @@
+@font-face {
+	font-family: 'Alegreya Sans SC';
+	font-style: normal;
+	font-weight: 400;
+	src: url('http://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+}
+
+@font-face {
+	font-family: 'Outage';
+	font-style: normal;
+	font-weight: 400;
+	src: url(Outage.ttf);
+}
+
+body {
+	background-color: #e0e0e0; 
+	font-family: sans-serif;
+	color: black;
+}
+h1 {
+
+} 
+
+h2 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+select {
+	font-size: 14px;
+    border: 0 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background:url("https://dl.dropboxusercontent.com/u/66196232/Portfolio/images/dropdownarrow.png") no-repeat;
+    background-position: 82px 7px;
+    width: 100px;
+    color: white;
+}
+option {
+	background-color: #95a596;
+	    border: 0 !important;
+	    color: white;
+}
+
+button {
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 2px solid #2ea536;
+	color: black;
+	background-color: #2ea536;
+}
+
+
+
+button:hover {
+	background-color: #36c440;
+}
+
+button:active{
+	background: rgb(14, 14, 14);
+background: -moz-linear-gradient(92deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%);
+background: -webkit-linear-gradient(92deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%);
+background: -o-linear-gradient(92deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%);
+background: -ms-linear-gradient(92deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%);
+background: linear-gradient(182deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%);
+}
+
+.greyed{
+	padding: 2px 5px 2px 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 0;
+	color: rgba(125,126,125,1);
+	background-color: #95a596;
+}
+
+.highlight{
+	color: #2ea536;
+}
+
+#welcome{
+	text-align: right;
+}
+
+#top {
+	margin: -8px -8px 0 -8px;
+	padding-right: 20px;
+	width: 100%;
+	color: white;
+	background-color: #646b64;
+}
+
+#name {
+	max-width: 480px;
+	display: inline;
+	padding-left: 20px;
+	font-family: 'Outage';
+}
+#game {
+	display: inline;
+	margin-left: 20px;
+	color: #e0e0e0;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 28px;
+	height: 38px;
+
+}
+#social {
+	display: inline;
+	margin-left: 20px;
+	position: relative;
+	top: 8px;
+}
+#email {
+	border-radius: 5px
+}
+#nav {
+	display: inline;
+	margin-left: 20px;
+}
+
+#displayContainer {
+	width: 79%;
+	height: 495px;
+	display: inline-block;
+	margin-top: 20px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#welcome{
+	text-align: center;
+	margin-top: 150px; 
+
+	color: #646b64;
+}
+#warmWelcome{
+	font-size: 300px;
+	font-family: 'Outage';
+
+}
+#right {
+	max-width: 19%;
+	height: 800px;
+	float: right;
+	display: inline-block;
+	font-size: 18px;
+	margin-top: 20px;
+	border-left: 2px solid #646b64;
+}
+#rightText {
+	padding: 12px 12px 12px 12px;
+	min-height: 200px;
+	width: 100%;
+}
+
+#title{
+	min-height: 48px;
+	max-width: 100%;
+	width: 358px;
+}
+
+#buttons {
+	text-align: center;
+	height: 31px;
+
+}
+
+.previewImage{
+	max-width: 100%;
+	display: none;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+#start{
+	text-align: center;
+
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+}

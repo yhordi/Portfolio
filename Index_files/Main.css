@@ -1,0 +1,94 @@
+@font-face {
+	font-family: "Governor";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://dl.dropboxusercontent.com/u/66196232/Portfolio/governor.ttf);
+}
+
+body{
+	background-color: black;
+	font-family: sans-serif;
+	color: white;
+}
+h1, h2{
+	font-family: "Governor";
+}
+h2{
+	text-align: center;
+}
+
+select{
+	font-size: 14px;
+}
+
+#top{
+	border-bottom: 3px solid #06a511;
+	margin: -8px -8px 0 -8px;
+	padding-right: 20px;
+	width: 100%;
+	min-width: 1200px;
+	background-color: 
+
+}
+
+#name{
+	max-width: 480px;
+	display: inline;
+	padding-left: 20px;
+}
+#game{
+	display: inline;
+	margin-left: 20px;
+}
+#social{
+	display: inline;
+	margin-left: 20px;
+}
+#email{
+	border-radius: 5px
+}
+#nav{
+	display: inline;
+	margin-left: 20px;
+}
+
+#displayContainer{
+	width: 79%;
+	height: 800px;
+	display: inline-block;
+	margin-top: 20px;
+	background: url("images/wallpaper-2900317.png");
+	background-position: center;
+}
+#right{
+
+	max-width: 19%;
+	height: 800px;
+	float: right;
+	display: inline-block;
+	margin-top: 20px;
+}
+#rightText{
+	padding: 12px 12px 12px 12px;
+}
+
+.social{
+	border-radius: 5px;
+	color: white;
+	padding: 2px 4px 2px 4px;
+	font-weight: bold;
+	font-size: 25px
+}
+
+#email{
+
+}
+#facebook{
+
+}
+#google{
+
+}
+#linkedin{
+
+}

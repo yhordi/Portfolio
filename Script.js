@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){ 
 
 	$("#prev").hide();
 	$("#nextGreyed").hide();
@@ -9,8 +9,6 @@ $(document).ready(function(){
 	$("#warmWelcome").animate({'font-size': '75px'}, 1200, function(){
 		$("#start").show("slide", {direction: "right"}, 1000);
 	});
-
-
 
 	var previews = [{
 		showPic:"",
@@ -40,12 +38,34 @@ $(document).ready(function(){
 	
 	var i = 0
 
-	console.log(i);
+	//right arrow functionality
 
-	//next button
+	$("body").keydown(function(e){
+		if(e.which == 39) {
+			$("#welcome").fadeOut(500);
+			$("#start").fadeOut(500);
+			$("#prev").show();
+			$("#prevGreyed").hide();
+			if (i < 5){
+				i++;
+				$(previews[i-1].showPic).hide("slide", {direction: "left"}, 300);
+        		$(previews[i].showPic).delay(400).show("slide", {direction: "right"}, 400);
+        		$("#displayContainer").css("background-size", "contain");
+        		$("#displayContainer").css("background-repeat", "no-repeat");
+			}
+		
+        $("#rightText").html(previews[i].text);
+        $("#title").html(previews[i].title);
+    	};
+    	if (i === 5){
+		$("#next").hide();
+		$("#nextGreyed").show();
+		};
+	});
+
+	//next button functionality
 
 	$("body").on('click','#next',function(){
-		
 		if (i === 4){
 			$("#next").hide();
 			$("#nextGreyed").show();
@@ -56,7 +76,7 @@ $(document).ready(function(){
 			$("#welcome").fadeOut(500);
 			$("#start").fadeOut(500);
 
-		}
+		};
 
         i++;
         console.log(i);
@@ -65,10 +85,41 @@ $(document).ready(function(){
         $("#displayContainer").css("background-size", "contain");
         $("#displayContainer").css("background-repeat", "no-repeat");
         $("#rightText").html(previews[i].text);
-        $("#title").html(previews[i].title)
+        $("#title").html(previews[i].title);
 	});
 
-	//previous button
+	//left arrow functionality
+
+	$("body").keydown(function(e){
+		if(e.which == 37) {
+    		
+		if (i > 4){
+			$("#nextGreyed").hide();
+			$("#next").show();
+			
+		}
+		else if (i < 2){
+			$("#prev").hide();
+			$("#prevGreyed").show();
+		}
+		else if (i === 4){
+			//$("#nextGreyed").hide();
+		}
+
+        i--;
+        console.log(i);
+
+        $(previews[i].showPic).delay(400).show("slide", {direction: "left"}, 400);
+        $(previews[i+1].showPic).hide("slide", {direction: "right"}, 300);
+        $("#displayContainer").css("background-size", "contain");
+        $("#displayContainer").css("background-repeat", "no-repeat");
+        $("#rightText").html(previews[i].text);
+        $("#title").html(previews[i].title)	
+
+    	};
+	});
+
+	//previous button functionality
 
 	$("body").on('click','#prev',function(){
 		if (i > 4){

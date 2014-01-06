@@ -5,12 +5,12 @@
 	src: url('http://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
 }
 
-/*@font-face {
+@font-face {
 	font-family: 'Outage';
 	font-style: normal;
 	font-weight: 400;
 	src: url(Outage.ttf);
-}*/
+}
 
 body {
 	background-color: #e0e0e0; 

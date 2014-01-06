@@ -5,22 +5,19 @@
 	src: url('http://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
 }
 
-@font-face {
+/*@font-face {
 	font-family: 'Outage';
 	font-style: normal;
 	font-weight: 400;
 	src: url(Outage.ttf);
-}
+}*/
 
 body {
 	background-color: #e0e0e0; 
 	font-family: sans-serif;
 	color: black;
 }
-h1 {
-
-} 
-
+ 
 h2 {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	text-align: center;
@@ -99,6 +96,7 @@ background: linear-gradient(182deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%
 	display: inline;
 	padding-left: 20px;
 	font-family: 'Outage';
+
 }
 #game {
 	display: inline;

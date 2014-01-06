@@ -139,7 +139,7 @@ background: linear-gradient(182deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%
 	color: #646b64;
 }
 #warmWelcome{
-	font-size: 300px;
+	font-size: 275px;
 	font-family: 'Outage';
 
 }
@@ -179,7 +179,6 @@ background: linear-gradient(182deg, rgb(14, 14, 14) 30%, rgb(125, 126, 125) 100%
 
 #start{
 	text-align: center;
-
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: bold;
 }
